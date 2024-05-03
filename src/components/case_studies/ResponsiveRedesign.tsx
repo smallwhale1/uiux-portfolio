@@ -41,26 +41,28 @@ const ResponsiveRedesign = (props: Props) => {
       </div>
       <div className="case-study-block case-study-dark">
         <CaseStudyHeading text="Identifying Issues" />
-        <p className="case-study-body">
-          This is the current home page for Let Them Eat Cake:
-        </p>
-        <div className="case-study-images">
+        <div className="case-study-flex">
+          <div className="case-study-left-text">
+            <h3 className="case-study-section-heading">
+              <i>Analyzing</i> the current site
+            </h3>
+            <p className="case-study-important-body">
+              Take a look at the current home page for Let Them Eat Cake. You
+              can visit their site here.
+            </p>
+            <p className="case-study-important-body">
+              While I like the decorative feeling of the page, after interacting
+              with their site, which you can visit here, I noted a few main
+              issues.
+            </p>
+          </div>
           <img
-            className="case-study-img"
+            className="case-study-img-right"
             width={400}
             src="assets/images/case-studies/let-them-eat-original.png"
           />
-          <img
-            className="case-study-img"
-            width={400}
-            src="assets/images/projects/responsive/original-2.png"
-          />
         </div>
 
-        <p className="case-study-body">
-          Not bad at all, but after interacting with their site, which you can
-          visit here, I noted a few main issues:
-        </p>
         <div className="case-study-points">
           <div className="case-study-point-container">
             <h4 className="case-study-point-header">color</h4>
@@ -93,36 +95,45 @@ const ResponsiveRedesign = (props: Props) => {
         <p className="case-study-body">
           With the problems identified, I set out to redesign the interface. I
           began with a few sketches that turned into low fidelity prototypes,
-          seeking to address the usability issues above:
+          seeking to address issues including those listed above.
         </p>
-        <div className="case-study-images">
-          <img
-            height={400}
-            className="case-study-img"
-            src="assets/images/projects/responsive/desktop-lofi.png"
-          />
-          <img
-            height={400}
-            className="case-study-img"
-            src="assets/images/projects/responsive/desktop-lofi.png"
-          />
-          <img
-            height={400}
-            className="case-study-img"
-            src="assets/images/projects/responsive/desktop-lofi.png"
-          />
+        <div className="case-study-images-full">
+          <div className="case-study-img-container">
+            <img
+              className="case-study-img-full"
+              src="assets/images/projects/responsive/desktop-lofi.png"
+            />
+          </div>
+
+          <div className="case-study-img-container">
+            <img
+              className="case-study-img-full"
+              src="assets/images/projects/responsive/tablet-lofi.png"
+            />
+          </div>
+          <div className="case-study-img-container">
+            <img
+              className="case-study-img-full"
+              src="assets/images/projects/responsive/mobile-lofi.png"
+            />
+          </div>
         </div>
-        <p className="case-study-body">
-          Based on these initial designs, I developed a style guide that
-          addressed the prevalent contrast issue throughout the page:
-        </p>
-        <div className="case-study-images">
+        <div className="case-study-flex">
+          <div className="case-study-left-text">
+            <h3 className="case-study-section-heading">Style Guide</h3>
+            <p className="case-study-important-body">
+              Based on these initial designs, I developed a style guide with my
+              main components that addressed the prevalent contrast issue
+              throughout the page.
+            </p>
+          </div>
           <img
-            className="case-study-img"
-            width={500}
+            className="case-study-img-right"
+            width={400}
             src="assets/images/projects/responsive/style-guide.png"
           />
         </div>
+
         <p className="case-study-body">
           Finally, I developed a high fidelity prototype of the new interface
           before coding the website in HTML/CSS, completing the design process:
@@ -142,6 +153,33 @@ const ResponsiveRedesign = (props: Props) => {
           </div>
         </div>
       </div>
+
+      <div className="case-study-block">
+        <CaseStudyHeading text="Learnings" />
+        <p className="case-study-body">
+          Throughout this process, I learned how important it is to identify the
+          core usability issues before implementing an interface. This ensures
+          that the user is always kept at the center of the design process.
+        </p>
+        <p className="case-study-body">
+          I also learned to break up the development process into different
+          high-level steps in order to keep my thought process organized. This
+          helped me visualize the product holistically before diving into the
+          details of implementation.
+        </p>
+      </div>
+      <div className="case-study-block">
+        <CaseStudyHeading text="Final Product" />
+        <p className="case-study-body">
+          Based on the high fidelity prototype, I coded the redesign in HTML/CSS
+          with a bit of JavaScript for responsiveness. You can visit the
+          redesigned website{" "}
+          <a href="https://smallwhale1.github.io/cs1300-responsive-redesign/">
+            here!
+          </a>
+        </p>
+      </div>
+      {/* Last gallery */}
       <div className="case-study-images-full">
         <div className="case-study-img-container">
           <img
