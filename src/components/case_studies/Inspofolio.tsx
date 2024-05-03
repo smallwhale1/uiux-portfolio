@@ -207,10 +207,11 @@ const Inspofolio = (props: Props) => {
           </div>
         </div>
         <p className="case-study-body">
+          You can try out the application{" "}
           <a href="https://inspofolio.vercel.app/" target="_blank">
-            Here
+            here.{" "}
           </a>{" "}
-          is the link to try it out. Happy creating!
+          Happy creating!
         </p>
       </div>
     </div>

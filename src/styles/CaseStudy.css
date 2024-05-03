@@ -81,6 +81,7 @@
 .case-study-images-full {
   /* margin: 0 -10rem; */
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
