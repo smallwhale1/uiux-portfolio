@@ -1,0 +1,18 @@
+.footer {
+  background-color: #27272a;
+  color: white;
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.date-socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-heading {
+  font-size: 3rem;
+}

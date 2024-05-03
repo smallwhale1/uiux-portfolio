@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fffaf3;
+}
+
+.text-highlight {
+  color: #ef5727;
+}
+
+.btn-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,43 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  color: #000000;
+  background-color: #ffffff;
+  transition: scale 0.2s ease;
+}
+
+.img-container {
+  position: relative;
+}
+
+.card-img {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  width: 100%;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.card-img-shown {
+  opacity: 1;
+}
+
+.card-text {
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+h4 {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tools {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}

@@ -1,15 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
+import ResponsiveRedesign from "./components/case_studies/ResponsiveRedesign";
+import Inspofolio from "./components/case_studies/Inspofolio";
+import PlaylistCreator from "./components/case_studies/PlaylistCreator";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/responsiveRedesign",
+    element: <ResponsiveRedesign />,
+  },
+  {
+    path: "/inspofolio",
+    element: <Inspofolio />,
+  },
+  {
+    path: "/playlistCreator",
+    element: <PlaylistCreator />,
+  },
+]);
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

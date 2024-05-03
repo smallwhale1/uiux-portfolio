@@ -1,0 +1,22 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 8rem;
+  margin-bottom: 4rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+}
+
+@media (max-width: 600px) {
+  .projects {
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

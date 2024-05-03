@@ -1,0 +1,28 @@
+.skill-card {
+  margin: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(60px);
+  opacity: 0;
+}
+
+.skill-card-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 450px) {
+  .skill-card {
+    justify-content: flex-start;
+    font-size: 0.8rem;
+    margin: 4px;
+    padding: 1rem;
+  }
+}
