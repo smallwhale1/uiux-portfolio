@@ -13,8 +13,8 @@ const ResponsiveRedesign = (props: Props) => {
         <CaseStudyHeading text="Case Study" />
         <h2 className="case-study-title">Responsive Redesign</h2>
         <p className="case-study-description">
-          A responsive redesign of a local bakery website, focusing on usability
-          and accesibility.
+          A <i>responsive redesign</i> of a local bakery website, focusing on
+          usability and accesibility.
         </p>
         <div className={"tools"}>
           {tools.map((tool) => (
@@ -178,34 +178,34 @@ const ResponsiveRedesign = (props: Props) => {
             here!
           </a>
         </p>
-      </div>
-      {/* Last gallery */}
-      <div className="case-study-images-full">
-        <div className="case-study-img-container">
-          <img
-            className="case-study-img-full"
-            src="assets/images/projects/responsive/responsive-1.png"
-          />
+        {/* Last gallery */}
+        <div className="case-study-images-full">
+          <div className="case-study-img-container">
+            <img
+              className="case-study-img-full"
+              src="assets/images/projects/responsive/responsive-1.png"
+            />
+          </div>
+          <div className="case-study-img-container">
+            <img
+              className="case-study-img-full"
+              src="assets/images/projects/responsive/responsive-2.png"
+            />
+          </div>
         </div>
-        <div className="case-study-img-container">
-          <img
-            className="case-study-img-full"
-            src="assets/images/projects/responsive/responsive-2.png"
-          />
-        </div>
-      </div>
-      <div className="case-study-images-full">
-        <div className="case-study-img-container">
-          <img
-            className="case-study-img-full"
-            src="assets/images/projects/responsive/responsive-3.png"
-          />
-        </div>
-        <div className="case-study-img-container">
-          <img
-            className="case-study-img-full"
-            src="assets/images/projects/responsive/responsive-4.png"
-          />
+        <div className="case-study-images-full">
+          <div className="case-study-img-container">
+            <img
+              className="case-study-img-full"
+              src="assets/images/projects/responsive/responsive-3.png"
+            />
+          </div>
+          <div className="case-study-img-container">
+            <img
+              className="case-study-img-full"
+              src="assets/images/projects/responsive/responsive-4.png"
+            />
+          </div>
         </div>
       </div>
     </div>
