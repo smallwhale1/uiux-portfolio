@@ -69,7 +69,12 @@ const Topbar = ({ smoothScroll }: Props) => {
             : { height: "6rem", color: "#ffffff" }
         }
       >
-        <div className={"name tangerine-bold"}>SZ</div>
+        <div
+          className={"name tangerine-bold"}
+          onClick={() => smoothScroll(Section.HOME)}
+        >
+          SZ
+        </div>
         <ul className={"links"}>
           {!collapsed && (
             <>

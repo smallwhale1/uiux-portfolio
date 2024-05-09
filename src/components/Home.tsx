@@ -32,7 +32,11 @@ const Home = ({ smoothScroll }: Props) => {
           </span>
         </Button>
       </div>
-      <img className="home-img" src="assets/images/home-img.jpg" />
+      <img
+        alt="desk with computer, coffee, tablet, and notebook"
+        className="home-img"
+        src="assets/images/home-img.jpg"
+      />
     </div>
   );
 };
