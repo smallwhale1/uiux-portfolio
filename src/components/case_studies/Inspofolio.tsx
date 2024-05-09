@@ -11,15 +11,27 @@ const Inspofolio = (props: Props) => {
     <div className="case-study">
       <div className="case-study-block">
         <CaseStudyHeading text="Case Study" />
-        <h2 className="case-study-title">Inspofolio</h2>
-        <p className="case-study-description">
-          A web application <i>for artists</i> to organize their multimedia
-          references.
-        </p>
-        <div className={"tools"}>
-          {tools.map((tool) => (
-            <Tool key={tool} tool={tool} />
-          ))}
+        <div className="flex-horizontal">
+          <div className="flex-vertical">
+            <h2 className="case-study-title">Inspofolio</h2>
+            <p className="case-study-description">
+              A web application <i>for artists</i> to organize their multimedia
+              references.
+            </p>
+            <div className={"tools"}>
+              {tools.map((tool) => (
+                <Tool key={tool} tool={tool} />
+              ))}
+            </div>
+          </div>
+
+          <div className="case-study-side">
+            <h3>Role</h3>
+            <p>Full-stack Developer</p>
+            <br />
+            <h3>Timeline</h3>
+            <p>May 2023 - August 2023</p>
+          </div>
         </div>
       </div>
       <div className="case-study-block">
@@ -185,10 +197,11 @@ const Inspofolio = (props: Props) => {
               src="assets/images/projects/inspofolio/inspofolio-1.png"
             />
           </div>
+
           <div className="case-study-img-container">
             <img
               className="case-study-img-full"
-              src="assets/images/projects/inspofolio/inspofolio-2.png"
+              src="assets/images/projects/inspofolio/inspofolio-3.png"
             />
           </div>
         </div>
@@ -196,13 +209,14 @@ const Inspofolio = (props: Props) => {
           <div className="case-study-img-container">
             <img
               className="case-study-img-full"
-              src="assets/images/projects/inspofolio/inspofolio-3.png"
+              src="assets/images/projects/inspofolio/inspofolio-4.png"
             />
           </div>
+
           <div className="case-study-img-container">
             <img
               className="case-study-img-full"
-              src="assets/images/projects/inspofolio/inspofolio-4.png"
+              src="assets/images/projects/inspofolio/inspofolio-2.png"
             />
           </div>
         </div>

@@ -4,7 +4,11 @@
   border-radius: 1rem;
   color: #000000;
   background-color: #ffffff;
-  transition: scale 0.2s ease;
+  transition: scale 0.3s ease;
+}
+
+.project-card:hover {
+  scale: 1.02;
 }
 
 .img-container {

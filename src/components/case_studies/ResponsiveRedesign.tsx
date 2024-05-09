@@ -4,22 +4,33 @@ import Tool from "../Tool";
 
 type Props = {};
 
-const tools = ["HTML", "CSS", "JavaScript"];
+const tools = ["HTML", "CSS", "Figma"];
 
 const ResponsiveRedesign = (props: Props) => {
   return (
     <div className="case-study">
       <div className="case-study-block">
         <CaseStudyHeading text="Case Study" />
-        <h2 className="case-study-title">Responsive Redesign</h2>
-        <p className="case-study-description">
-          A <i>responsive redesign</i> of a local bakery website, focusing on
-          usability and accesibility.
-        </p>
-        <div className={"tools"}>
-          {tools.map((tool) => (
-            <Tool key={tool} tool={tool} />
-          ))}
+        <div className="flex-horizontal">
+          <div className="flex-vertical">
+            <h1 className="case-study-title">Responsive Redesign</h1>
+            <p className="case-study-description">
+              A <i>responsive redesign</i> of a local bakery website, focusing
+              on usability and accesibility.
+            </p>
+            <div className={"tools"}>
+              {tools.map((tool) => (
+                <Tool key={tool} tool={tool} />
+              ))}
+            </div>
+          </div>
+          <div className="case-study-side">
+            <h3>Role</h3>
+            <p>Frontend Designer/Developer</p>
+            <br />
+            <h3>Timeline</h3>
+            <p>February 2024 - March 2024</p>
+          </div>
         </div>
       </div>
       <div className="case-study-block">
@@ -39,7 +50,8 @@ const ResponsiveRedesign = (props: Props) => {
           would improve its usability and accessibility for a variety of users.
         </p>
       </div>
-      <div className="case-study-block case-study-dark">
+
+      <div className="case-study-block">
         <CaseStudyHeading text="Identifying Issues" />
         <div className="case-study-flex">
           <div className="case-study-left-text">
@@ -90,7 +102,7 @@ const ResponsiveRedesign = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="case-study-block" style={{ paddingTop: "2rem" }}>
+      <div className="case-study-block case-study-dark">
         <CaseStudyHeading text="Process" />
         <p className="case-study-body">
           With the problems identified, I set out to redesign the interface. I
@@ -135,26 +147,19 @@ const ResponsiveRedesign = (props: Props) => {
         </div>
 
         <p className="case-study-body">
-          Finally, I developed a high fidelity prototype of the new interface
-          before coding the website in HTML/CSS, completing the design process:
+          Finally, I developed high fidelity prototypes of the new interface
+          before coding the website in HTML/CSS, completing the design process.
         </p>
-        <div className="case-study-images-full">
-          <div className="case-study-img-container">
-            <img
-              className="case-study-img-full"
-              src="assets/images/projects/responsive/hifi-1.png"
-            />
-          </div>
-          <div className="case-study-img-container">
-            <img
-              className="case-study-img-full"
-              src="assets/images/projects/responsive/hifi-2.png"
-            />
-          </div>
+
+        <div className="case-study-img-container">
+          <img
+            className="case-study-img-full"
+            src="assets/images/projects/responsive/hifis.png"
+          />
         </div>
       </div>
 
-      <div className="case-study-block">
+      <div className="case-study-block" style={{ paddingTop: "2rem" }}>
         <CaseStudyHeading text="Learnings" />
         <p className="case-study-body">
           Throughout this process, I learned how important it is to identify the
@@ -169,7 +174,7 @@ const ResponsiveRedesign = (props: Props) => {
         </p>
       </div>
       <div className="case-study-block">
-        <CaseStudyHeading text="Final Product" />
+        <CaseStudyHeading text="Result" />
         <p className="case-study-body">
           Based on the high fidelity prototype, I coded the redesign in HTML/CSS
           with a bit of JavaScript for responsiveness. You can visit the
@@ -178,8 +183,11 @@ const ResponsiveRedesign = (props: Props) => {
             here!
           </a>
         </p>
-        {/* Last gallery */}
-        <div className="case-study-images-full">
+        <img
+          className="img-small"
+          src="assets/images/projects/responsive/responsive-gif.gif"
+        />
+        {/* <div className="case-study-images-full">
           <div className="case-study-img-container">
             <img
               className="case-study-img-full"
@@ -192,8 +200,8 @@ const ResponsiveRedesign = (props: Props) => {
               src="assets/images/projects/responsive/responsive-2.png"
             />
           </div>
-        </div>
-        <div className="case-study-images-full">
+        </div> */}
+        {/* <div className="case-study-images-full">
           <div className="case-study-img-container">
             <img
               className="case-study-img-full"
@@ -206,7 +214,7 @@ const ResponsiveRedesign = (props: Props) => {
               src="assets/images/projects/responsive/responsive-4.png"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

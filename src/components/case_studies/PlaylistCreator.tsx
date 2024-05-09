@@ -11,15 +11,27 @@ const PlaylistCreator = (props: Props) => {
     <div className="case-study">
       <div className="case-study-block">
         <CaseStudyHeading text="Case Study" />
-        <h2 className="case-study-title">Playlist Creator</h2>
-        <p className="case-study-description">
-          An <i>interactive interface</i> for filtering media and organizing
-          them into a playlist.
-        </p>
-        <div className={"tools"}>
-          {tools.map((tool) => (
-            <Tool key={tool} tool={tool} />
-          ))}
+        <div className="flex-horizontal">
+          <div className="flex-vertical">
+            <h2 className="case-study-title">Playlist Creator</h2>
+            <p className="case-study-description">
+              An <i>interactive interface</i> for filtering media and organizing
+              them into a playlist.
+            </p>
+            <div className={"tools"}>
+              {tools.map((tool) => (
+                <Tool key={tool} tool={tool} />
+              ))}
+            </div>
+          </div>
+
+          <div className="case-study-side">
+            <h3>Role</h3>
+            <p>Frontend Developer/Designer</p>
+            <br />
+            <h3>Timeline</h3>
+            <p>March 2024 - April 2024</p>
+          </div>
         </div>
       </div>
       <div className="case-study-block">
@@ -35,7 +47,7 @@ const PlaylistCreator = (props: Props) => {
           keeping this balance in mind.
         </p>
       </div>
-      <div className="case-study-block case-study-dark">
+      <div className="case-study-block">
         <CaseStudyHeading text="Research" />
         <div className="case-study-flex">
           <div className="case-study-left-text">
@@ -104,7 +116,7 @@ const PlaylistCreator = (props: Props) => {
           filtering capabilities.
         </p>
       </div>
-      <div className="case-study-block" style={{ paddingTop: "2rem" }}>
+      <div className="case-study-block case-study-dark">
         <CaseStudyHeading text="Process" />
         <p className="case-study-body">
           Keeping these insights in mind, I began developing my own playlist
@@ -139,6 +151,7 @@ const PlaylistCreator = (props: Props) => {
           <img
             className="case-study-img-right"
             width={250}
+            style={{ borderRadius: "8px" }}
             src="assets/images/projects/playlist-creator/media-card.png"
           />
         </div>
@@ -152,7 +165,7 @@ const PlaylistCreator = (props: Props) => {
           duration of the media. Users can also reset the filters and clear
           their playlist with buttons.
         </p>
-        <div className="case-study-images-full">
+        {/* <div className="case-study-images-full">
           <div className="case-study-img-container">
             <img
               className="case-study-img-full"
@@ -160,16 +173,23 @@ const PlaylistCreator = (props: Props) => {
             />
           </div>
           <div className="case-study-img-container">
-            {" "}
             <img
               style={{ borderRadius: "8px" }}
               className="case-study-img-full"
               src="assets/images/projects/playlist-creator/playlist.png"
             />
           </div>
-        </div>
+        </div> */}
+        <img
+          className="img-small"
+          src="assets/images/projects/playlist-creator/filters.png"
+        />
+        <img
+          className="img-small"
+          src="assets/images/projects/playlist-creator/playlist.png"
+        />
       </div>
-      <div className="case-study-block">
+      <div className="case-study-block" style={{ paddingTop: "2rem" }}>
         <CaseStudyHeading text="Learnings" />
         <p className="case-study-body">
           I learned how to perform competitive analysis in order to understand
@@ -184,24 +204,14 @@ const PlaylistCreator = (props: Props) => {
       </div>
       <div className="case-study-block">
         <CaseStudyHeading text="Result" />
-        <p className="case-study-body">Here is the final result.</p>
-        <div className="case-study-images-full">
-          <div className="case-study-img-container">
-            <img
-              className="case-study-img-full"
-              src="assets/images/projects/playlist-creator/final-1.png"
-            />
-          </div>
-          <div className="case-study-img-container">
-            <img
-              className="case-study-img-full"
-              src="assets/images/projects/playlist-creator/final-2.png"
-            />
-          </div>
-        </div>
+        <p className="case-study-body">Here is a demo of the final product.</p>
+        <img
+          className="img-small"
+          src="assets/images/projects/playlist-creator/playlist-gif.gif"
+        />
 
         <p className="case-study-body">
-          You can check out the interface{" "}
+          You can try it out yourself{" "}
           <a href="https://cs1300-development.vercel.app/" target="_blank">
             here.{" "}
           </a>{" "}

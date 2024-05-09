@@ -3,13 +3,16 @@ import { IconButton, useTheme } from "@mui/material";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMenu } from "react-icons/ai";
 import { useContext, useEffect, useState } from "react";
 import { BiX } from "react-icons/bi";
+import { Section } from "../util/interfaces";
 
-interface Props {}
+interface Props {
+  smoothScroll: (section: Section) => void;
+}
 
 // Tailwind Zinc
 const navbarColor = "#27272a";
 
-const Topbar = ({}: Props) => {
+const Topbar = ({ smoothScroll }: Props) => {
   const [collapsed, setCollapsed] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
@@ -70,14 +73,23 @@ const Topbar = ({}: Props) => {
           {!collapsed && (
             <>
               {/* Navigation links within page */}
-              <li className={"link"}>
+              <li className={"link"} onClick={() => smoothScroll(Section.HOME)}>
                 <div>home</div>
               </li>
-              <li className={"link"}>
+              <li
+                className={"link"}
+                onClick={() => smoothScroll(Section.PROJECTS)}
+              >
                 <div>projects</div>
               </li>
               <li className={"link"}>
-                <div>resume</div>
+                <a
+                  href="resume.pdf"
+                  target="_blank"
+                  style={{ color: scrolledDown ? "#ffffff" : "#000000" }}
+                >
+                  resume
+                </a>
               </li>
             </>
           )}

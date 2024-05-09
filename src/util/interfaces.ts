@@ -12,3 +12,9 @@ export interface Skill {
   skill: string;
   icon: ReactElement;
 }
+
+export enum Section {
+  HOME,
+  PROJECTS,
+  SKILLS,
+}
