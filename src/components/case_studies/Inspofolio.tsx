@@ -63,6 +63,7 @@ const Inspofolio = (props: Props) => {
             </p>
           </div>
           <img
+            alt="pinterest on desktop"
             className="case-study-img-right"
             width={400}
             src="assets/images/projects/inspofolio/pinterest.jpg"
@@ -133,6 +134,7 @@ const Inspofolio = (props: Props) => {
         <div className="case-study-images-full">
           <div className="case-study-img-container">
             <img
+              alt="user flowchart"
               className="case-study-img-full"
               src="assets/images/projects/inspofolio/flowchart.png"
             />
@@ -153,6 +155,7 @@ const Inspofolio = (props: Props) => {
             </p>
           </div>
           <img
+            alt="color palette"
             className="case-study-img-right"
             width={400}
             src="assets/images/projects/inspofolio/color-palette.jpg"
@@ -193,6 +196,7 @@ const Inspofolio = (props: Props) => {
         <div className="case-study-images-full">
           <div className="case-study-img-container">
             <img
+              alt="inspofolio app login"
               className="case-study-img-full"
               src="assets/images/projects/inspofolio/inspofolio-1.png"
             />
@@ -200,6 +204,7 @@ const Inspofolio = (props: Props) => {
 
           <div className="case-study-img-container">
             <img
+              alt="inspofolio app project creation"
               className="case-study-img-full"
               src="assets/images/projects/inspofolio/inspofolio-3.png"
             />
@@ -208,6 +213,7 @@ const Inspofolio = (props: Props) => {
         <div className="case-study-images-full">
           <div className="case-study-img-container">
             <img
+              alt="inspofolio app dashboard images"
               className="case-study-img-full"
               src="assets/images/projects/inspofolio/inspofolio-4.png"
             />
@@ -215,6 +221,7 @@ const Inspofolio = (props: Props) => {
 
           <div className="case-study-img-container">
             <img
+              alt="inspofolio app dashboard links"
               className="case-study-img-full"
               src="assets/images/projects/inspofolio/inspofolio-2.png"
             />

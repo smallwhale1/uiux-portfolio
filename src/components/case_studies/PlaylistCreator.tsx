@@ -64,6 +64,7 @@ const PlaylistCreator = (props: Props) => {
             </p>
           </div>
           <img
+            alt="competitive analysis of pinterest, airbnb, and amazon favoriting"
             className="case-study-img-right"
             width={400}
             // style={{ borderRadius: "8px" }}
@@ -149,6 +150,7 @@ const PlaylistCreator = (props: Props) => {
             </p>
           </div>
           <img
+            alt="media card design"
             className="case-study-img-right"
             width={250}
             style={{ borderRadius: "8px" }}
@@ -181,10 +183,12 @@ const PlaylistCreator = (props: Props) => {
           </div>
         </div> */}
         <img
+          alt="filter design"
           className="img-small"
           src="assets/images/projects/playlist-creator/filters.png"
         />
         <img
+          alt="sidebar playlist design"
           className="img-small"
           src="assets/images/projects/playlist-creator/playlist.png"
         />
@@ -206,6 +210,7 @@ const PlaylistCreator = (props: Props) => {
         <CaseStudyHeading text="Result" />
         <p className="case-study-body">Here is a demo of the final product.</p>
         <img
+          alt="demo of playlist creator app"
           className="img-small"
           src="assets/images/projects/playlist-creator/playlist-gif.gif"
         />

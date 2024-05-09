@@ -69,6 +69,7 @@ const ResponsiveRedesign = (props: Props) => {
             </p>
           </div>
           <img
+            alt="let them eat cake homepage"
             className="case-study-img-right"
             width={400}
             src="assets/images/case-studies/let-them-eat-original.png"
@@ -112,6 +113,7 @@ const ResponsiveRedesign = (props: Props) => {
         <div className="case-study-images-full">
           <div className="case-study-img-container">
             <img
+              alt="figma desktop lofi of redesigned website"
               className="case-study-img-full"
               src="assets/images/projects/responsive/desktop-lofi.png"
             />
@@ -119,12 +121,14 @@ const ResponsiveRedesign = (props: Props) => {
 
           <div className="case-study-img-container">
             <img
+              alt="figma tablet lofi of redesigned website"
               className="case-study-img-full"
               src="assets/images/projects/responsive/tablet-lofi.png"
             />
           </div>
           <div className="case-study-img-container">
             <img
+              alt="figma mobile lofi of redesigned website"
               className="case-study-img-full"
               src="assets/images/projects/responsive/mobile-lofi.png"
             />
@@ -140,6 +144,7 @@ const ResponsiveRedesign = (props: Props) => {
             </p>
           </div>
           <img
+            alt="style guide of redesigned website"
             className="case-study-img-right"
             width={400}
             src="assets/images/projects/responsive/style-guide.png"
@@ -153,6 +158,7 @@ const ResponsiveRedesign = (props: Props) => {
 
         <div className="case-study-img-container">
           <img
+            alt="hifi profotypes of redesigned website"
             className="case-study-img-full"
             src="assets/images/projects/responsive/hifis.png"
           />
@@ -184,6 +190,7 @@ const ResponsiveRedesign = (props: Props) => {
           </a>
         </p>
         <img
+          alt="demo of redesigned website"
           className="img-small"
           src="assets/images/projects/responsive/responsive-gif.gif"
         />
