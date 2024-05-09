@@ -29,3 +29,39 @@
   width: 350px;
   border-radius: 100%;
 }
+
+/* Responsive */
+
+@media (max-width: 950px) {
+  .home {
+    height: auto;
+    padding-bottom: 4rem;
+    padding-top: 8rem;
+    flex-direction: column-reverse;
+  }
+
+  .home-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-heading {
+    font-size: 4rem;
+  }
+
+  .home-p {
+    font-size: 1.25rem;
+  }
+
+  .home-img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+    padding-top: 8rem;
+  }
+}

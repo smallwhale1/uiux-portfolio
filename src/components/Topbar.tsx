@@ -39,6 +39,7 @@ const Topbar = ({ smoothScroll }: Props) => {
         setCollapsed(true);
       } else {
         setCollapsed(false);
+        setMenuOpen(false);
       }
       setShowNavbar(true);
     };
@@ -93,40 +94,20 @@ const Topbar = ({ smoothScroll }: Props) => {
               </li>
             </>
           )}
-          {/* Link icons */}
-          {/* <ul className={"external-links"}>
-            <li className={"link"}>
-              <a href="https://github.com/smallwhale1" target="_blank">
-                <IconButton>
-                  <AiFillGithub color={scrolledDown ? "#ffffff" : "#000000"} />
-                </IconButton>
-              </a>
+
+          {collapsed && (
+            <li className="link">
+              <IconButton
+                onClick={() => {
+                  setMenuOpen(true);
+                }}
+              >
+                <AiOutlineMenu color={scrolledDown ? "#ffffff" : "#000000"} />
+              </IconButton>
             </li>
-            <a
-              href="https://www.linkedin.com/in/sophie-zhang-237428235/"
-              target="_blank"
-            >
-              <li className={"link"}>
-                <IconButton>
-                  <AiFillLinkedin
-                    color={scrolledDown ? "#ffffff" : "#000000"}
-                  />
-                </IconButton>
-              </li>
-            </a>
-            {collapsed && (
-              <li className={"link"}>
-                <IconButton
-                  onClick={() => {
-                    setMenuOpen(true);
-                  }}
-                >
-                  <AiOutlineMenu />
-                </IconButton>
-              </li>
-            )}
-          </ul> */}
+          )}
         </ul>
+
         {
           <div
             className={`collapsed-menu ${menuOpen && "collapsed-menu-shown"}`}
@@ -141,22 +122,34 @@ const Topbar = ({ smoothScroll }: Props) => {
             </IconButton>
             <ul className={"menu"}>
               {/* Navigation links within page */}
-
               <li
+                style={{ color: "#000000" }}
                 className={`menu-link`}
                 onClick={() => {
+                  smoothScroll(Section.HOME);
+                  setMenuOpen(false);
+                }}
+              >
+                <div>Home</div>
+              </li>
+              <li
+                style={{ color: "#000000" }}
+                className={`menu-link`}
+                onClick={() => {
+                  smoothScroll(Section.PROJECTS);
                   setMenuOpen(false);
                 }}
               >
                 <div>projects</div>
               </li>
-              <li
-                className={`menu-link`}
-                onClick={() => {
-                  setMenuOpen(false);
-                }}
-              >
-                <div>skills</div>
+              <li className={"menu-link"}>
+                <a
+                  href="resume.pdf"
+                  target="_blank"
+                  style={{ color: "#000000" }}
+                >
+                  resume
+                </a>
               </li>
             </ul>
           </div>

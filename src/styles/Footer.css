@@ -16,3 +16,15 @@
 .footer-heading {
   font-size: 3rem;
 }
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 4rem 2rem;
+  }
+
+  .footer-heading {
+    font-size: 2rem;
+  }
+}
