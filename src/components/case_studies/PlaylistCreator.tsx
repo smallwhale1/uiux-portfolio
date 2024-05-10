@@ -13,7 +13,7 @@ const PlaylistCreator = (props: Props) => {
         <CaseStudyHeading text="Case Study" />
         <div className="flex-horizontal">
           <div className="flex-vertical">
-            <h2 className="case-study-title">Playlist Creator</h2>
+            <h1 className="case-study-title">Playlist Creator</h1>
             <p className="case-study-description">
               An <i>interactive interface</i> for filtering media and organizing
               them into a playlist.
@@ -26,10 +26,10 @@ const PlaylistCreator = (props: Props) => {
           </div>
 
           <div className="case-study-side">
-            <h3>Role</h3>
+            <h2>Role</h2>
             <p>Frontend Developer/Designer</p>
             <br />
-            <h3>Timeline</h3>
+            <h2>Timeline</h2>
             <p>March 2024 - April 2024</p>
           </div>
         </div>
@@ -153,7 +153,7 @@ const PlaylistCreator = (props: Props) => {
             alt="media card design"
             className="case-study-img-right"
             width={250}
-            style={{ borderRadius: "8px" }}
+            style={{ borderRadius: "8px", width: "250px" }}
             src="assets/images/projects/playlist-creator/media-card.png"
           />
         </div>

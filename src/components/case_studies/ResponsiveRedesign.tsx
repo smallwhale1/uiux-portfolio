@@ -25,10 +25,10 @@ const ResponsiveRedesign = (props: Props) => {
             </div>
           </div>
           <div className="case-study-side">
-            <h3>Role</h3>
+            <h2>Role</h2>
             <p>Frontend Designer/Developer</p>
             <br />
-            <h3>Timeline</h3>
+            <h2>Timeline</h2>
             <p>February 2024 - March 2024</p>
           </div>
         </div>
@@ -110,7 +110,7 @@ const ResponsiveRedesign = (props: Props) => {
           began with a few sketches that turned into low fidelity prototypes,
           seeking to address issues including those listed above.
         </p>
-        <div className="case-study-images-full">
+        <div className="case-study-images-full-maintain">
           <div className="case-study-img-container">
             <img
               alt="figma desktop lofi of redesigned website"

@@ -8,7 +8,7 @@ const Projects = () => {
 
   return (
     <div className={`projects`}>
-      <h3 className="btn-text">projects</h3>
+      <h3 className="section-heading">Projects</h3>
       <div className="projects-grid">
         {projects.map((project) => (
           <ProjectCard key={project.name} project={project} />

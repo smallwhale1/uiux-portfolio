@@ -13,7 +13,7 @@ const Inspofolio = (props: Props) => {
         <CaseStudyHeading text="Case Study" />
         <div className="flex-horizontal">
           <div className="flex-vertical">
-            <h2 className="case-study-title">Inspofolio</h2>
+            <h1 className="case-study-title">Inspofolio</h1>
             <p className="case-study-description">
               A web application <i>for artists</i> to organize their multimedia
               references.
@@ -26,10 +26,10 @@ const Inspofolio = (props: Props) => {
           </div>
 
           <div className="case-study-side">
-            <h3>Role</h3>
+            <h2>Role</h2>
             <p>Full-stack Developer</p>
             <br />
-            <h3>Timeline</h3>
+            <h2>Timeline</h2>
             <p>May 2023 - August 2023</p>
           </div>
         </div>
